@@ -8,6 +8,10 @@ app.use((req, res, next) => {
     next();
 });
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 app.get('/xkcd-info', async (req, res) => {
     try {
         const response = await fetch('https://xkcd.com/info.0.json');
