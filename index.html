@@ -14,7 +14,7 @@
         async function getXkcdComic() {
             try {
                 // Fetch the latest XKCD comic
-                const response = await fetch('https://xkcd.com/info.0.json');
+                const response = await fetch('https://xkcd-brown.vercel.app/xkcd-info');
                 const latestComic = await response.json();
 
                 // Get the date when the comic was created
