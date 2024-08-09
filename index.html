@@ -28,12 +28,11 @@
                 if (comicDate <= yesterday) {
                     // If the comic is from yesterday or earlier, show a random comic
                     comicUrl = 'https://c.xkcd.com/random/comic/';
-                    window.location.href = comicUrl;  // Redirect to a random comic
                 } else {
                     // If the comic is from today, show the latest comic
                     comicUrl = latestComic.img;
-                    document.getElementById('comic-image').src = comicUrl;
                 }
+		document.getElementById('comic-image').src = comicUrl;
             } catch (error) {
                 console.error('Error fetching the XKCD comic:', error);
             }
