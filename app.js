@@ -3,6 +3,13 @@ import * as path from "node:path";
 import fetch from 'node-fetch';
 const app = express();
 
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+// These two lines will simulate the behavior of `__dirname` in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
