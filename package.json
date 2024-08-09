@@ -1,0 +1,25 @@
+{
+  "name": "xkcd",
+  "version": "1.0.0",
+  "description": "APIs around XKCD comics (Just for fun!)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovlin-thakkar/xkcd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lovlin-thakkar/xkcd/issues"
+  },
+  "homepage": "https://github.com/lovlin-thakkar/xkcd#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  }
+}
